@@ -455,7 +455,7 @@
     
     function backup_all_file(btn)
     {
-		btn.value    = '<%:Backup OpenClash%>';
+		btn.value    = '<%:Cadangkan OpenClash%>';
 		btn.disabled = true;
 		window.location.href='<%="backup"%>';
 		btn.disabled = false;
@@ -464,7 +464,7 @@
 
     function backup_no_core(btn)
     {
-		btn.value    = '<%:Backup Exclude Cores%>';
+		btn.value    = '<%:Pengecualian Cadangan Core%>';
 		btn.disabled = true;
 		window.location.href='<%="backup_ex_core"%>';
 		btn.disabled = false;
@@ -473,7 +473,7 @@
 
     function backup_only_core(btn)
     {
-		btn.value    = '<%:Backup Core%>';
+		btn.value    = '<%:Cadangkan Core%>';
 		btn.disabled = true;
 		window.location.href='<%="backup_only_core"%>';
 		btn.disabled = false;
@@ -482,7 +482,7 @@
 
     function backup_only_config(btn)
     {
-		btn.value    = '<%:Backup Config%>';
+		btn.value    = '<%:Cadangkan Config%>';
 		btn.disabled = true;
 		window.location.href='<%="backup_only_config"%>';
 		btn.disabled = false;
@@ -491,7 +491,7 @@
 
     function backup_only_rule(btn)
     {
-		btn.value    = '<%:Backup Rule Provider%>';
+		btn.value    = '<%:Cadangkan Rule Provider%>';
 		btn.disabled = true;
 		window.location.href='<%="backup_only_rule"%>';
 		btn.disabled = false;
@@ -500,7 +500,7 @@
 
     function backup_only_proxy(btn)
     {
-		btn.value    = '<%:Backup Proxy Provider%>';
+		btn.value    = '<%:Penyedia Proksi Cadangan%>';
 		btn.disabled = true;
 		window.location.href='<%="backup_only_proxy"%>';
 		btn.disabled = false;
@@ -513,25 +513,25 @@
 		var r = release_branch.value;
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "save_corever_branch")%>', {core_ver: v, release_branch: r}, function(x, status) {
 			if (x && x.status == 200) {
-				btn.value    = '<%:One Click Check Update%>';
+				btn.value    = '<%:Pembaruan Periksa Satu Klik%>';
 				btn.disabled = true;
-				var r = confirm("<%:Check and update all Cores and plug-ins?%>")
+				var r = confirm("<%:Periksa dan perbarui semua Core dan plug-in?%>")
 				if (r == true) {
 					XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "one_key_update_check")%>', null, function(x, status) {
 						if ( x && x.status == 200 ) {
 							if ( status.corever != "0" ) {
 								XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "one_key_update")%>', null, function(x, status) {
 									if ( x && x.status != 200 ) {
-										alert('<%:Check failed, Please try again later!%>')
+										alert('<%:Pemeriksaan gagal, Coba lagi nanti!%>')
 									}
 								});
 								}
 							else {
-								alert('<%:No Compiled Version is Selected, Please Select on The Top and Try Again!%>')
+								alert('<%:Tidak Ada Versi Kompilasi yang Dipilih, Silakan Pilih di Bagian Atas dan Coba Lagi!%>')
 							}
 						}
 						else {
-							alert('<%:Check failed, Please try again later!%>')
+							alert('<%:Pemeriksaan gagal, Coba lagi nanti!%>')
 							}
 					});
 				}
