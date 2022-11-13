@@ -3,10 +3,10 @@
 	<table width="100%">
 	  <tr><td width="100%" colspan="4">
 	    <p align="center" id="update_tip">
-	  		<b><%:Note: if the update fails, you can manually download and upload%></b>
+	  		<b><%:Catatan: jika pembaruan gagal, Anda dapat mengunduh dan mengunggah secara manual%></b>
 	  	</p>
 	  </td></tr>
-	  <tr><td width="25%"><%:Compiled Version Selected%></td>
+	  <tr><td width="25%"><%:Versi Terkompilasi Dipilih%></td>
 	  	<td width="25%" align="left"><select id="CORE_VERSION">
 	  		<option value="linux-386"><%:linux-386%></option>
 				<option value="linux-amd64"><%:linux-amd64(x86-64)%></option>
@@ -21,50 +21,50 @@
 				<option value="linux-mips64le"><%:linux-mips64le%></option>
 				<option value="linux-mipsle-softfloat"><%:linux-mipsle-softfloat%></option>
 				<option value="linux-mipsle-hardfloat"><%:linux-mipsle-hardfloat%></option>
-				<option value="0"><%:Not Set%></option>
+				<option value="0"><%:Tidak diatur%></option>
 	  	</select></td>
-	  	<td width="25%"><%:Release Branch Selected%></td>
+	  	<td width="25%"><%:Rilis Cabang Dipilih%></td>
 	  	<td width="25%" align="left"><select id="RELEASE_BRANCH">
 	  		<option value="master">Master</option>
 				<option value="dev">Developer</option>
 	  	</select></td>
 	  	</tr>
 		<tr>
-			<td width="25%"><%:CPU Architecture%></td><td width="25%" align="left" id="CPU_MODEL"><%:Collecting data...%></td>
-			<td width="25%"><%:Last Check Update%></td><td width="25%" align="left" id="CHECKTIME"><%:Collecting data...%></td>
+			<td width="25%"><%:Arsitektur CPU%></td><td width="25%" align="left" id="CPU_MODEL"><%:.%></td>
+			<td width="25%"><%:Pembaruan Pemeriksaan Terakhir%></td><td width="25%" align="left" id="CHECKTIME"><%:.%></td>
 		</tr>
 	  <tr><td width="100%" colspan="4">
 	    <p align="center">
-	  		<b><%:Core path:%>/etc/openclash/core/clash</b>
+	  		<b><%:Lokasi Simpan:%>/etc/openclash/core/clash</b>
 	  	</p>
 	  </td></tr>
-		<tr><td width="25%">[Dev] <%:Current Core%></td><td width="25%" align="left" id="CORE_CV"><%:Collecting data...%></td><td width="25%">[Dev] <%:Latest Core%></td><td width="25%" align="left" id="CORE_LV"><%:Collecting data...%></td></tr>
-		<tr><td width="25%"><%:Update Core%></td><td width="25%" align="left" id="core_up"><%:Collecting data...%></td><td width="25%"><%:Download Latest Core%></td><td width="25%" align="left" id="ma_core_up"><%:Collecting data...%></td></tr>
+		<tr><td width="25%">[Dev] <%:Current Core%></td><td width="25%" align="left" id="CORE_CV"><%:.%></td><td width="25%">[Dev] <%:Core Terbaru%></td><td width="25%" align="left" id="CORE_LV"><%:.%></td></tr>
+		<tr><td width="25%"><%:Perbarui Core%></td><td width="25%" align="left" id="core_up"><%:.%></td><td width="25%"><%:Unduh Core Terbaru%></td><td width="25%" align="left" id="ma_core_up"><%:.%></td></tr>
 		<tr><td width="100%" colspan="4">
 	    <p align="center">
-	  		<b><%:Core path:%>/etc/openclash/core/clash_tun</b>
+	  		<b><%:Lokasi Simpan:%>/etc/openclash/core/clash_tun</b>
 	  	</p>
 	  </td></tr>
-		<tr><td width="25%">[TUN] <%:Current Core%></td><td width="25%" align="left" id="CORE_TUN_CV"><%:Collecting data...%></td><td width="25%">[TUN] <%:Latest Core%></td><td width="25%" align="left" id="CORE_TUN_LV"><%:Collecting data...%></td></tr>
-		<tr><td width="25%"><%:Update Core%></td><td width="25%" align="left" id="core_tun_up"><%:Collecting data...%></td><td width="25%"><%:Download Latest Core%></td><td width="25%" align="left" id="ma_core_tun_up"><%:Collecting data...%></td></tr>
+		<tr><td width="25%">[TUN] <%:Core Saat ini%></td><td width="25%" align="left" id="CORE_TUN_CV"><%:.%></td><td width="25%">[TUN] <%:Core Terbaru%></td><td width="25%" align="left" id="CORE_TUN_LV"><%:.%></td></tr>
+		<tr><td width="25%"><%:Perbarui Core%></td><td width="25%" align="left" id="core_tun_up"><%:.%></td><td width="25%"><%:Unduh Core Terbaru%></td><td width="25%" align="left" id="ma_core_tun_up"><%:.%></td></tr>
 		<tr><td width="100%" colspan="4">
 	    <p align="center">
-	  		<b><%:Core path:%>/etc/openclash/core/clash_meta</b>
+	  		<b><%:Lokasi Simpan:%>/etc/openclash/core/clash_meta</b>
 	  	</p>
 	  </td></tr>
-		<tr><td width="25%">[Meta] <%:Current Core%></td><td width="25%" align="left" id="CORE_META_CV"><%:Collecting data...%></td><td width="25%">[Meta] <%:Latest Core%></td><td width="25%" align="left" id="CORE_META_LV"><%:Collecting data...%></td></tr>
-		<tr><td width="25%"><%:Update Core%></td><td width="25%" align="left" id="core_meta_up"><%:Collecting data...%></td><td width="25%"><%:Download Latest Core%></td><td width="25%" align="left" id="ma_core_meta_up"><%:Collecting data...%></td></tr>
+		<tr><td width="25%">[Meta] <%:Core Saat ini%></td><td width="25%" align="left" id="CORE_META_CV"><%:.%></td><td width="25%">[Meta] <%:Core Terbaru%></td><td width="25%" align="left" id="CORE_META_LV"><%:.%></td></tr>
+		<tr><td width="25%"><%:Perbarui Core%></td><td width="25%" align="left" id="core_meta_up"><%:.%></td><td width="25%"><%:Unduh Core Terbaru%></td><td width="25%" align="left" id="ma_core_meta_up"><%:.%></td></tr>
 	</table>
 </fieldset>
 <fieldset class="cbi-section">
 	<table width="100%">
 		<tr><td width="100%" colspan="4">
 	    <p align="center">
-	  		<b><%:Client Update%></b>
+	  		<b><%:Pembaruan Klien%></b>
 	  	</p>
 	  </td></tr>
-		<tr><td width="25%"><%:Current Client%></td><td width="25%" align="left" id="OP_CV"><%:Collecting data...%></td><td width="25%"><%:Latest Client%></td><td width="25%" align="left" id="OP_LV"><%:Collecting data...%></td></tr>
-	  <tr><td width="25%"><%:Update Client%></td><td width="25%" align="left" id="op_up"><%:Collecting data...%></td><td width="25%"><%:Download Latest Client%></td><td width="25%" align="left" id="ma_op_up"><%:Collecting data...%></td></tr>
+		<tr><td width="25%"><%:Klien Saat ini%></td><td width="25%" align="left" id="OP_CV"><%:.%></td><td width="25%"><%:Klien Terbaru%></td><td width="25%" align="left" id="OP_LV"><%:.%></td></tr>
+	  <tr><td width="25%"><%:Perbarui Klien%></td><td width="25%" align="left" id="op_up"><%:.%></td><td width="25%"><%:Unduh Klien Terbaru%></td><td width="25%" align="left" id="ma_op_up"><%:.%></td></tr>
 	</table>
 </fieldset>
 <fieldset class="cbi-section">
@@ -72,17 +72,17 @@
 	  <tr>
 	  	<td width="25%">
 	  	   <p align="center" id="restore">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	  	</td>
 	  	<td width="25%">
 	  	   <p align="center" id="remove_core">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	  	</td>
 	    <td width="25%">
 	  	   <p align="center" id="one_key_update">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	    </td>
 	  </tr>
@@ -92,40 +92,40 @@
 	<table width="100%">
 		<tr><td width="100%" colspan="4">
 	    <p align="center">
-	  		<b><%:Backup Section%></b>
+	  		<b><%:Bagian Cadangan%></b>
 	  	</p>
 		</td></tr>
 		<tr>
 	  	<td width="25%">
 	  	   <p align="center" id="backup">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	  	</td>
 	  	<td width="25%">
 	  	   <p align="center" id="backup_ex_core">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	  	</td>
 	  	<td width="25%">
 	  	   <p align="center" id="backup_core_only">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	  	</td>
 		</tr>
 		<tr>
 	  	<td width="25%">
 	  	   <p align="center" id="backup_config_only">
-	  		   <%:Collecting data...%>
+	  		   <%:%>
 	  	   </p>
 	  	</td>
 	  	<td width="25%">
 	  	   <p align="center" id="backup_rule_only">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	  	</td>
 	  	<td width="25%">
 	  	   <p align="center" id="backup_proxy_only">
-	  		   <%:Collecting data...%>
+	  		   <%:.%>
 	  	   </p>
 	  	</td>
 		</tr>
@@ -204,39 +204,39 @@
 	
 	XHR.poll(3, '<%=luci.dispatcher.build_url("admin", "services", "openclash", "update")%>', null, function(x, status) {
 		if ( x && x.status == 200 ) {
-			cpu_model.innerHTML = status.coremodel ? "<b style=color:green>"+status.coremodel+"</b>" : "<b style=color:red><%:Model Not Found%></b>";
+			cpu_model.innerHTML = status.coremodel ? "<b style=color:green>"+status.coremodel+"</b>" : "<b style=color:orange><%:Model Tidak Ditemukan%></b>";
 			if ( status.upchecktime != "1" ) {
-				checktime.innerHTML = "<b style=color:green>"+status.upchecktime+"</b>";
+				checktime.innerHTML = "<b style=color:purple>"+status.upchecktime+"</b>";
 			}
 			else {
-				checktime.innerHTML = "<b style=color:red><%:Check Failed%></b>";
+				checktime.innerHTML = "<b style=color:orange><%:Gagal Memeriksa%></b>";
 			}
 			if ( status.corecv == "0" ) {
-				core_cv.innerHTML = "<b style=color:red><%:File Not Exist%></b>";
+				core_cv.innerHTML = "<b style=color:orange><%:File Tidak Ada%></b>";
 			}
 			else if (status.corecv != "") {
-				core_cv.innerHTML = "<b style=color:green>"+status.corecv+"</b>";
+				core_cv.innerHTML = "<b style=color:purple>"+status.corecv+"</b>";
 			}
 			else {
-				core_cv.innerHTML = "<b style=color:red><%:Unknown%></b>";
+				core_cv.innerHTML = "<b style=color:orange><%:Tidak dikenal%></b>";
 			}
 			if ( status.coretuncv == "0" ) {
-				core_tun_cv.innerHTML = "<b style=color:red><%:File Not Exist%></b>";
+				core_tun_cv.innerHTML = "<b style=color:orange><%:File Tidak Ada%></b>";
 			}
 			else if (status.coretuncv != "") {
-				core_tun_cv.innerHTML = "<b style=color:green>"+status.coretuncv+"</b>";
+				core_tun_cv.innerHTML = "<b style=color:purple>"+status.coretuncv+"</b>";
 			}
 			else {
-				core_tun_cv.innerHTML = "<b style=color:red><%:Unknown%></b>";
+				core_tun_cv.innerHTML = "<b style=color:orange><%:Tidak dikenal%></b>";
 			}
 			if ( status.coremetacv == "0" ) {
-				core_meta_cv.innerHTML = "<b style=color:red><%:File Not Exist%></b>";
+				core_meta_cv.innerHTML = "<b style=color:orange><%:File Tidak Ada%></b>";
 			}
 			else if (status.coremetacv != "") {
-				core_meta_cv.innerHTML = "<b style=color:green>"+status.coremetacv+"</b>";
+				core_meta_cv.innerHTML = "<b style=color:purple>"+status.coremetacv+"</b>";
 			}
 			else {
-				core_meta_cv.innerHTML = "<b style=color:red><%:Unknown%></b>";
+				core_meta_cv.innerHTML = "<b style=color:orange><%:Tidak dikenal%></b>";
 			}
 			var corelv = status.corelv;
 			var arr_core = corelv.split(",");
@@ -244,45 +244,45 @@
 			var coretunlvis = arr_core[1];
 			var coremetalvis = arr_core[2];
 			if (corelvis != status.corecv && corelvis != "" && corelvis != "\n") {
-			   core_lv.innerHTML = "<b style=color:green>"+corelvis+"<%:<New>%></b>";
+			   core_lv.innerHTML = "<b style=color:purple>"+corelvis+"<%:<Baru>%></b>";
 			}
 			else if (corelvis != "" && corelvis == status.corecv && corelvis != "\n") {
-			   core_lv.innerHTML = "<b style=color:green>"+corelvis+"</b>";
+			   core_lv.innerHTML = "<b style=color:purple>"+corelvis+"</b>";
 			}
 			else {
-			   core_lv.innerHTML = "<b style=color:red><%:Unknown%></b>";
+			   core_lv.innerHTML = "<b style=color:orange><%:Tidak dikenal%></b>";
 			}
 			if (coretunlvis != status.coretuncv && coretunlvis != "" && coretunlvis != "\n") {
-			   core_tun_lv.innerHTML = "<b style=color:green>"+coretunlvis+"<%:<New>%></b>";
+			   core_tun_lv.innerHTML = "<b style=color:purple>"+coretunlvis+"<%:<New>%></b>";
 			}
 			else if (coretunlvis != "" && coretunlvis == status.coretuncv && coretunlvis != "\n") {
-			   core_tun_lv.innerHTML = "<b style=color:green>"+coretunlvis+"</b>";
+			   core_tun_lv.innerHTML = "<b style=color:purple>"+coretunlvis+"</b>";
 			}
 			else {
-			   core_tun_lv.innerHTML = "<b style=color:red><%:Unknown%></b>";
+			   core_tun_lv.innerHTML = "<b style=color:orange><%:Tidak dikenal%></b>";
 			}
 			if (coremetalvis != status.coremetacv && coremetalvis != "" && coremetalvis != "\n") {
-			   core_meta_lv.innerHTML = "<b style=color:green>"+coremetalvis+"<%:<New>%></b>";
+			   core_meta_lv.innerHTML = "<b style=color:purple>"+coremetalvis+"<%:<Baru>%></b>";
 			}
 			else if (coremetalvis != "" && coremetalvis == status.coremetacv && coremetalvis != "\n") {
-			   core_meta_lv.innerHTML = "<b style=color:green>"+coremetalvis+"</b>";
+			   core_meta_lv.innerHTML = "<b style=color:purple>"+coremetalvis+"</b>";
 			}
 			else {
-			   core_meta_lv.innerHTML = "<b style=color:red><%:Unknown%></b>";
+			   core_meta_lv.innerHTML = "<b style=color:orange><%:Tidak dikenal%></b>";
 			}
 			var oplv = status.oplv;
 			var arr_op = oplv.split(",");
 			var oplvis = arr_op[0];
 			var new_op = arr_op[1];
-			op_cv.innerHTML = status.opcv ? "<b style=color:green>"+status.opcv+"</b>" : "<b style=color:red><%:Unknown%></b>";
+			op_cv.innerHTML = status.opcv ? "<b style=color:purple>"+status.opcv+"</b>" : "<b style=color:orange><%:Tidak dikenal%></b>";
 			if ( new_op == "2" && oplvis != "" && oplvis != "\n") {
-			   op_lv.innerHTML = "<b style=color:green>"+oplvis+"<%:<New>%></b>";
+			   op_lv.innerHTML = "<b style=color:purple>"+oplvis+"<%:<Baru>%></b>";
 			}
 			else if (oplvis != "" && oplvis != "\n") {
-			   op_lv.innerHTML = "<b style=color:green>"+oplvis+"</b>";
+			   op_lv.innerHTML = "<b style=color:purple>"+oplvis+"</b>";
 			}
 			else {
-			   op_lv.innerHTML = "<b style=color:red><%:Unknown%></b>";
+			   op_lv.innerHTML = "<b style=color:orange><%:Tidak dikenal%></b>";
 			}
 		}
 	});
@@ -293,11 +293,11 @@
 		    	var rdmdl=Math.floor(Math.random()*2)+1;
 				if(rdmdl==1)
 				{
-					update_tip.innerHTML = '<b><font><%:Note: if the update fails, you can manually download and upload%></font></b>';
+					update_tip.innerHTML = '<b><font><%:Catatan: jika pembaruan gagal, Anda dapat mengunduh dan mengunggah secara manual%></font></b>';
 				}
 				if(rdmdl==2)
 				{
-					update_tip.innerHTML = '<b><font><%:Note: the client may not support update, because the firmware with squashfs format will not release flash space after updating%></font></b>';
+					update_tip.innerHTML = '<b><font><%:Catatan: klien mungkin tidak mendukung pembaruan, karena firmware dengan format squashfs tidak akan melepaskan ruang flash setelah memperbarui%></font></b>';
 				}
       		 }
    		}
@@ -307,10 +307,10 @@
 	  if ( x && x.status == 200 ) {
 	  	if ( status.startlog.match("level=fatal") ) {
 	    	XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "del_start_log")%>', null, function(x) {});
-	    	alert('<%:OpenClash Start Failed%> :\n\n' + status.startlog.split('msg=')[1]);
+	    	alert('<%:OpenClash Gagal Memulai%> :\n\n' + status.startlog.split('msg=')[1]);
 		}
 		else if ( status.startlog != "\n" && status.startlog != "" ) {
-	    	update_tip.innerHTML = '<b style=color:green>'+status.startlog+'</b>';
+	    	update_tip.innerHTML = '<b style=color:purple>'+status.startlog+'</b>';
 		};
 	  };
 	});
@@ -322,7 +322,7 @@
 			XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "save_corever_branch")%>', {core_ver: v, release_branch: r}, function(x, status) {
 				if (x && x.status == 200) {
 					XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "coreupdate")%>', {core_type: type}, function(x, status) {
-        	btn.value    = '<%:Check And Update%>';
+        	btn.value    = '<%:Periksa Dan Perbarui%>';
         	btn.disabled = false;
         	return false;
         	});
@@ -336,7 +336,7 @@
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "save_corever_branch")%>', {release_branch: r}, function(x, status) {
 		if (x && x.status == 200) {
            XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "opupdate")%>', null, function(x, status) {
-           btn.value    = '<%:Check And Update%>';
+           btn.value    = '<%:Periksa Dan Perbarui%>';
            btn.disabled = false;
            return false;
            });
@@ -350,7 +350,7 @@
 		var r = release_branch.value;
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "save_corever_branch")%>', {core_ver: v, release_branch: r}, function(x, status) {
 		if (x && x.status == 200) {
-			btn.value    = '<%:Download%>';
+			btn.value    = '<%:Mengunduh%>';
 			btn.disabled = false;
 			XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "update_ma")%>', status.corever, function(x, status) {
 			if ( x && x.status == 200 ) {
@@ -368,7 +368,7 @@
 					window.location.href=url3;
 					}
 					else {
-					alert('<%:Failed to get the latest version. Please try again later!%>')
+					alert('<%:Gagal mendapatkan versi terbaru. Coba lagi nanti!%>')
 					}
 					}
 					if (type == "Meta") {
@@ -377,7 +377,7 @@
 					}
 				}
 				else {
-					alert('<%:No Compiled Version is Selected, Please Select on The Top and Try Again!%>')
+					alert('<%:Tidak Ada Versi Kompilasi yang Dipilih, Silakan Pilih di Bagian Atas dan Coba Lagi!%>')
 				}
 			}
        		});
@@ -388,7 +388,7 @@
     
     function ma_op_update(btn)
     {
-        btn.value    = '<%:Download%>';
+        btn.value    = '<%:Mengunduh%>';
         btn.disabled = false;
         var r = release_branch.value;
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "save_corever_branch")%>', {release_branch: r}, function(x, status) {
@@ -402,7 +402,7 @@
 						window.location.href=url2;
 					}
 					else {
-						alert('<%:Failed to get the latest version. Please try again later!%>')
+						alert('<%:Gagal mendapatkan versi terbaru. Silakan coba lagi nanti!%>')
 					}
 				}
 			});
@@ -413,17 +413,17 @@
     
     function remove_all_core(btn)
     {
-        btn.value    = '<%:Remove Core%>';
+        btn.value    = '<%:Hapus Core%>';
         btn.disabled = true;
-        var r = confirm("<%:Are you sure want to remove all core files?%>")
+        var r = confirm("<%:Apakah Anda yakin ingin menghapus semua file inti?%>")
         if (r == true) {
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "remove_all_core")%>', null, function(x, status) {
         	if ( x && x.status == 200 ) {
-        		alert('<%:Remove succeeded!%>')
+        		alert('<%:Hapus berhasil!%>')
         		window.location.href='<%="settings?tab.openclash.config=version_update"%>';
         	}
           	else {
-            alert('<%:Remove failed!%>')
+            alert('<%:Hapus gagal!%>')
            }
         });
         } else {
@@ -434,17 +434,17 @@
     
     function restore_config(btn)
     {
-        btn.value    = '<%:Restore Default Config%>';
+        btn.value    = '<%:Kembalikan Konfigurasi Default%>';
         btn.disabled = true;
-        var r = confirm("<%:Are you sure want to restore the default config?%>")
+        var r = confirm("<%:Apakah Anda yakin ingin mengembalikan konfigurasi default??%>")
         if (r == true) {
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "restore")%>', null, function(x, status) {
         	if ( x && x.status == 200 ) {
-        		alert('<%:Restore succeeded!%>')
+        		alert('<%:Pemulihan berhasil!%>')
         		window.location.href='<%="settings"%>';
         	}
         	else {
-				alert('<%:Restore failed!%>')
+				alert('<%:Pemulihan gagal!%>')
 				window.location.href='<%="settings"%>';
            }
         });
