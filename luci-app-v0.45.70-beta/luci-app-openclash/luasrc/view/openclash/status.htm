@@ -67,32 +67,32 @@
         </td></tr>
 	    <tr><td width="100%" colspan="4">
 	  		<p style="margin: 10px 0; text-align: center" id="_clashstart">
-	  			<b><%:Tips: setelah memulai, harap tunggu dengan sabar hingga koneksi normal%></b>
+	  			<b><%:Tip: after started, please wait patiently until the connection is normal%></b>
 	  		</p>
 	    </td></tr>
-		<tr><td width="25%"><%:Program Utama%></td><td  width="25%" align="left"><span id="_clash"><%:.%></span><span id="_watchdog"></span></td><td width="25%"><%:Panel Kontrol IP Login%></td><td width="25%" align="left" id="_daip"><%:.%></td></tr>
-		<tr><td width="20%"><%:Mode Pilihan%></td><td  width="30%" align="left"><span id="_mode"><%:.%></span><span id="radio-ru-mode" class="radio-button">
+		<tr><td width="25%"><%:Main Program%></td><td  width="25%" align="left"><span id="_clash"><%:Collecting data...%></span><span id="_watchdog"></span></td><td width="25%"><%:Control Panel Login IP%></td><td width="25%" align="left" id="_daip"><%:Collecting data...%></td></tr>
+		<tr><td width="20%"><%:Running Mode%></td><td  width="30%" align="left"><span id="_mode"><%:Collecting data...%></span><span id="radio-ru-mode" class="radio-button">
 				<input type="radio" id="normal" name="radios-ru" value="" checked onclick="return switch_run_mode(this.value)"/>
-				<label for="normal" id="run_normal"><%:Kompatibel%></label>
+				<label for="normal" id="run_normal"><%:Compatible%></label>
 				<input type="radio" id="tun" name="radios-ru" value="-tun" onclick="return switch_run_mode(this.value)"/>
 				<label for="tun"><%:TUN%></label>
 				<input type="radio" id="mix" name="radios-ru" value="-mix" onclick="return switch_run_mode(this.value)"/>
-				<label for="mix"><%:Campuran%></label>
-				</span></td><td width="25%"><%:Panel Kontrol Port Login%></td><td width="25%" align="left" id="_dapo"><%:.%></td></tr>
-		<tr><td width="25%"><%:Pilih Proksi%></td><td width="25%" align="left"><span id="radio-de"><%:.%></span><span id="radio-mode" class="radio-button">
+				<label for="mix"><%:Mix%></label>
+				</span></td><td width="25%"><%:Control Panel Login Port%></td><td width="25%" align="left" id="_dapo"><%:Collecting data...%></td></tr>
+		<tr><td width="25%"><%:Proxy Mode%></td><td width="25%" align="left"><span id="radio-de"><%:Collecting data...%></span><span id="radio-mode" class="radio-button">
 				<input type="radio" id="rule" name="radios" value="rule" checked onclick="return switch_rule_mode(this.value)"/>
-				<label for="rule">Rules</label>
+				<label for="rule">Rule</label>
 				<input type="radio" id="global" name="radios" value="global" onclick="return switch_rule_mode(this.value)"/>
-				<label for="global">Umum</label>
+				<label for="global">Global</label>
 				<input type="radio" id="direct" name="radios" value="direct" onclick="return switch_rule_mode(this.value)"/>
-				<label for="direct">Bypass</label>
-				</span></td><td width="25%"><%:Panel Kontrol Sandi Login%></td><td width="25%" align="left" id="_dase"><%:.%></td></tr>
-		<tr><td width="25%"><%:Panel Kontrol Yacd%></td><td width="25%" align="left" id="_web"><%:.%></td><td width="25%"><%:Panel Kontrol Dashboard%></td><td width="25%" align="left" id="_webo"><%:.%></td></tr>
+				<label for="direct">Direct</label>
+				</span></td><td width="25%"><%:Control Panel Login Secret%></td><td width="25%" align="left" id="_dase"><%:Collecting data...%></td></tr>
+		<tr><td width="25%"><%:Yacd Control Panel%></td><td width="25%" align="left" id="_web"><%:Collecting data...%></td><td width="25%"><%:Dashboard Control Panel%></td><td width="25%" align="left" id="_webo"><%:Collecting data...%></td></tr>
 		<tr id="tool_label2"><td colspan="4"><p style="margin: 10px 0; text-align: center">
 <span>
 &nbsp;&nbsp;<%:Up:%>&nbsp;
 	<span id="upload_">
-		<font style=color:Purple>
+		<font style=color:green>
 		0 KB/S
 		</font>
 	</span>
@@ -101,43 +101,43 @@
 <span>
 &nbsp;&nbsp;<%:Down:%>&nbsp;
 	<span id="download_">
-		<font style=color:Purple>
+		<font style=color:green>
 		0 KB/S
 		</font>
 	</span>
 </span>
 
 <span>
-&nbsp;&nbsp;<%:Total Up:%>&nbsp;
+&nbsp;&nbsp;<%:Up Total:%>&nbsp;
 	<span id="uploadtotal_">
-		<font style=color:Purple>
+		<font style=color:green>
 		0 KB
 		</font>
 	</span>
 </span>
 
 <span>
-&nbsp;&nbsp;<%:Total Down:%>&nbsp;
+&nbsp;&nbsp;<%:Down Total:%>&nbsp;
 	<span id="downloadtotal_">
-		<font style=color:Purple>
+		<font style=color:green>
 		0 KB
 		</font>
 	</span>
 </span>
 
 <span>
-&nbsp;&nbsp;<%:Koneksi:%>&nbsp;
+&nbsp;&nbsp;<%:Connections:%>&nbsp;
 	<span id="connect_t">
-		<font style=color:Purple>
+		<font style=color:green>
 		0
 		</font>
 	</span>
 </span>
 
 <span>
-&nbsp;&nbsp;<%:RAM:%>&nbsp;
+&nbsp;&nbsp;<%:Ram:%>&nbsp;
 	<span id="mem_t">
-		<font style=color:Purple>
+		<font style=color:green>
 		0 KB
 		</font>
 	</span>
@@ -146,7 +146,7 @@
 <span>
 &nbsp;&nbsp;<%:CPU:%>&nbsp;
 	<span id="cpu_t">
-		<font style=color:Purple>
+		<font style=color:green>
 		0 %
 		</font>
 	</span>
@@ -160,18 +160,18 @@
 				</div>
 			</td>
 		</tr>
-		<tr id="hid_1"><td width="100%" colspan="4"><p style="margin: 10px 0; text-align: center"><b><%:Operasi Cepat%></b></p></td></tr>
+		<tr id="hid_1"><td width="100%" colspan="4"><p style="margin: 10px 0; text-align: center"><b><%:Quick Operation%></b></p></td></tr>
     <tr id="hid_2">
-    	<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_close_all_connection"><%:.%></p></td>
-			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_reload_firewall"><%:.%></p></td>
-			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_flush_fakeip_cache"><%:.%></p></td>
-			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_subscribe"><%:.%></p></td>
+    	<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_close_all_connection"><%:Collecting data...%></p></td>
+			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_reload_firewall"><%:Collecting data...%></p></td>
+			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_flush_fakeip_cache"><%:Collecting data...%></p></td>
+			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_subscribe"><%:Collecting data...%></p></td>
 			</tr>
 		<tr id="hid_3">
-			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_other_rules"><%:.%></p></td>
-			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_geoip"><%:.%></p></td>
-			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_geosite"><%:%></p></td>
-			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_one_key_update"><%:.%></p></td>
+			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_other_rules"><%:Collecting data...%></p></td>
+			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_geoip"><%:Collecting data...%></p></td>
+			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_update_geosite"><%:Collecting data...%></p></td>
+			<td width="25%" align="center"><p style="margin: 10px 0; text-align: center" id="_one_key_update"><%:Collecting data...%></p></td>
 			</tr>
 </table>
 </fieldset>
@@ -179,13 +179,13 @@
 	<table>
 		<tr><td width="100%" colspan="4">
 			<p style="margin: 10px 0; text-align: center">
-				<b><%:Harap pastikan bahwa semua item ditampilkan secara normal sebelum dijalankan. Jika Anda perlu memperbarui, silakan buka halaman pengaturan umum%></b>
+				<b><%:Please ensure that all items are displayed normally before running. If you need to update, please go to the global settings page%></b>
 			</p>
 		</td></tr>
-		<tr><td width="25%"><%:Pilih Node Cadangan%></td><td width="25%" align="left" id="_historychecktime"><%:.%></td><td width="25%"><%:Pembaruan Aturan lhie1%></td><td width="25%" align="left" id="_lhie1"><%:.%></td></tr>
-		<tr><td width="25%"><%:Pembaruan Aturan ConnersHua%></td><td width="25%" align="left" id="_ConnersHua"><%:.%></td><td width="25%"><%:Pembaruan Aturan Pengembalian ConnersHua%></td><td width="25%" align="left" id="_ConnersHua_return"><%:.%></td></tr>
-		<tr><td width="25%"><%:Pembaruan IP Daratan%></td><td width="25%" align="left" id="_chnroute"><%:.%></td><td width="25%"><%:Pembaruan IPv6 Daratan%></td><td width="25%" align="left" id="_chnroutev6"><%:.%></td></tr>
-		<tr><td width="25%"><%:Pembaruan Data GEOIP%></td><td width="25%" align="left" id="_ipdb"><%:%></td><td width="25%"><%:Pembaruan Data GeoSite%></td><td width="25%" align="left" id="_geosite"><%:.%></td></tr>
+		<tr><td width="25%"><%:Node Select Backup%></td><td width="25%" align="left" id="_historychecktime"><%:Collecting data...%></td><td width="25%"><%:lhie1 Rule Update%></td><td width="25%" align="left" id="_lhie1"><%:Collecting data...%></td></tr>
+		<tr><td width="25%"><%:ConnersHua Rule Update%></td><td width="25%" align="left" id="_ConnersHua"><%:Collecting data...%></td><td width="25%"><%:ConnersHua Return Rule Update%></td><td width="25%" align="left" id="_ConnersHua_return"><%:Collecting data...%></td></tr>
+		<tr><td width="25%"><%:Mainland IP Update%></td><td width="25%" align="left" id="_chnroute"><%:Collecting data...%></td><td width="25%"><%: Mainland IPv6 Update%></td><td width="25%" align="left" id="_chnroutev6"><%:Collecting data...%></td></tr>
+		<tr><td width="25%"><%:GEOIP Data Update%></td><td width="25%" align="left" id="_ipdb"><%:Collecting data...%></td><td width="25%"><%:GeoSite Data Update%></td><td width="25%" align="left" id="_geosite"><%:Collecting data...%></td></tr>
 	</table>
 </fieldset>
 <script type="text/javascript">//<![CDATA[
@@ -249,38 +249,38 @@
 		if ( x && x.status == 200 ) {
 			if ( status.restricted_mode != "1" )
 			{
-			   clash.innerHTML = status.clash ? '<b style=color:purple><%:Berjalan%></b>' : '<b style=color:red><%:Tidak Berjalan%></b>';
+			   clash.innerHTML = status.clash ? '<b style=color:green><%:Running%></b>' : '<b style=color:red><%:Not Running%></b>';
 			}
 			else
 			{
-			   clash.innerHTML = status.clash ? '<b style=color:purple><%:Berjalan%> <%:<Limited State>%></b>' : '<b style=color:red><%:Tidak Berjalan%></b>';
+			   clash.innerHTML = status.clash ? '<b style=color:green><%:Running%> <%:<Limited State>%></b>' : '<b style=color:red><%:Not Running%></b>';
 			}
-			watchdog.innerHTML = status.watchdog ? '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<%:Daemons%>:&nbsp;&nbsp;&nbsp;<b style=color:purple><%:Berjalan%></b>' : '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<%:Daemons%>:&nbsp;&nbsp;&nbsp;<b style=color:orange><%:Tidak Berjalan%></b>';
+			watchdog.innerHTML = status.watchdog ? '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<%:Daemons%>:&nbsp;&nbsp;&nbsp;<b style=color:green><%:Running%></b>' : '&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<%:Daemons%>:&nbsp;&nbsp;&nbsp;<b style=color:red><%:Not Running%></b>';
 			dase.innerHTML = status.dase ? "<b style=color:green>"+status.dase+"</b>" : "<b style=color:red>"+"<%:Not Set%>"+"</b>";
 			web.innerHTML = status.web ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Open Panel%>" onclick="return ycad_dashboard(this)"/>' : '<b style=color:red><%:Not Running%></b>';
 			webo.innerHTML = status.web ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Open Panel%>" onclick="return net_dashboard(this)"/>' : '<b style=color:red><%:Not Running%></b>';
-			close_all_connection.innerHTML = status.clash ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Putuskan Semua Koneksi%>" onclick="return b_close_all_connection(this)"/>' : '<b style=color:orange><%:Tidak Berjalan%></b>';
-			reload_firewall.innerHTML = status.clash ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Reload Firewall Rules%>" onclick="return b_reload_firewall(this)"/>' : '<b style=color:orange><%:Tidak Berjalan%></b>';
-			flush_fakeip_cache.innerHTML = status.clash ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Flush Fake-IP Cache%>" onclick="return b_flush_fakeip_cache(this)"/>' : '<b style=color:orange><%:Tidak Berjalan%></b>';
+			close_all_connection.innerHTML = status.clash ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Close All Connections%>" onclick="return b_close_all_connection(this)"/>' : '<b style=color:red><%:Not Running%></b>';
+			reload_firewall.innerHTML = status.clash ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Reload Firewall Rules%>" onclick="return b_reload_firewall(this)"/>' : '<b style=color:red><%:Not Running%></b>';
+			flush_fakeip_cache.innerHTML = status.clash ? '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Flush Fake-IP Cache%>" onclick="return b_flush_fakeip_cache(this)"/>' : '<b style=color:red><%:Not Running%></b>';
 			one_key_update.innerHTML = '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Check All Components Update%>" onclick="return all_one_key_update(this)"/>';
 			update_subscribe.innerHTML = '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Check Config Update%>" onclick="return b_update_subscribe(this)"/>';
 			update_other_rules.innerHTML = '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Check Third Party Rules Update%>" onclick="return b_update_other_rules(this)"/>';
 			update_geoip.innerHTML = '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Check GEOIP Data Update%>" onclick="return b_update_geoip(this)"/>';
 			update_geosite.innerHTML = '<input type="button" class="btn cbi-button cbi-button-reload" value="<%:Check GeoSite Data Update%>" onclick="return b_update_geosite(this)"/>';
 			if (status.daip && window.location.hostname == status.daip) {
-			   daip.innerHTML = status.daip ? "<b style=color:purple>"+status.daip+"</b>" : "<b style=color:orange>"+"<%:Tidak Disetting%>"+"</b>";
-			   dapo.innerHTML = status.cn_port ? "<b style=color:purple>"+status.cn_port+"</b>" : "<b style=color:orange>"+"<%:Tidak Disetting%>"+"</b>";
+			   daip.innerHTML = status.daip ? "<b style=color:green>"+status.daip+"</b>" : "<b style=color:red>"+"<%:Not Set%>"+"</b>";
+			   dapo.innerHTML = status.cn_port ? "<b style=color:green>"+status.cn_port+"</b>" : "<b style=color:red>"+"<%:Not Set%>"+"</b>";
 			   luci_protocol = (window.location.protocol == "http:" ? "ws://" : "wss://") + status.daip + ":" + status.cn_port;
 			}
 			else if (status.daip && window.location.hostname != status.daip && status.db_foward_domain && status.db_foward_port)
 			{
-			   daip.innerHTML = status.db_foward_domain ? "<b style=color:purple>"+status.db_foward_domain+"</b>" : "<b style=color:orange>"+"<%:Tidak Disetting%>"+"</b>";
-			   dapo.innerHTML = status.db_foward_port ? "<b style=color:purple>"+status.db_foward_port+"</b>" : "<b style=color:orange>"+"<%:Tidak Disetting%>"+"</b>";
+			   daip.innerHTML = status.db_foward_domain ? "<b style=color:green>"+status.db_foward_domain+"</b>" : "<b style=color:red>"+"<%:Not Set%>"+"</b>";
+			   dapo.innerHTML = status.db_foward_port ? "<b style=color:green>"+status.db_foward_port+"</b>" : "<b style=color:red>"+"<%:Not Set%>"+"</b>";
 			   luci_protocol = (window.location.protocol == "http:" ? "ws://" : "wss://") + status.db_foward_domain + ":" + status.db_foward_port;
 			}
 			else {
-			   daip.innerHTML = status.daip ? "<b style=color:orange>"+"<%:Tidak Disetting%>"+"</b>";
-			   dapo.innerHTML = status.cn_port ? "<b style=color:purple>"+status.cn_port+"</b>" : "<b style=color:orange>"+"<%:Tidak Disetting%>"+"</b>";
+			   daip.innerHTML = status.daip ? "<b style=color:green>"+status.daip+"</b>" : "<b style=color:red>"+"<%:Not Set%>"+"</b>";
+			   dapo.innerHTML = status.cn_port ? "<b style=color:green>"+status.cn_port+"</b>" : "<b style=color:red>"+"<%:Not Set%>"+"</b>";
 			   luci_protocol = (window.location.protocol == "http:" ? "ws://" : "wss://") + status.daip + ":" + status.cn_port;
 			};
 			
@@ -291,7 +291,7 @@
 			else {
 				radio_mode.style.display = "none";
 				radio_de.style.display = "";
-				radio_de.innerHTML = "<b style=color:orange>"+"<%:Tidak Disetting%></b>";
+				radio_de.innerHTML = "<b style=color:red><%:Not Running%></b>";
 			};
 			
 			if (status.clash && status.watchdog) {
@@ -344,10 +344,10 @@
 	  if ( x && x.status == 200 ) {
 	  	if ( status.startlog.match("level=fatal") ) {
 	    	XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "del_start_log")%>', null, function(x) {});
-	    	alert('<%:Gagal memulai openclash%> :\n\n' + status.startlog.split('msg=')[1]);
+	    	alert('<%:OpenClash Start Failed%> :\n\n' + status.startlog.split('msg=')[1]);
 		}
 		else if ( status.startlog != "\n" && status.startlog != "" ) {
-	    	startlog.innerHTML = '<b style=color:purple>'+status.startlog+'</b>';
+	    	startlog.innerHTML = '<b style=color:green>'+status.startlog+'</b>';
 		};
 	  };
 	});
@@ -358,67 +358,67 @@
 				var rdmdl=Math.floor(Math.random()*16)+1;
 				if(rdmdl==1)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: Anda dapat memodifikasi profil di halaman profil (untuk konten yang tidak diambil alih)%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: You can modify the profile on the profile page (for content that is not taken over)%></font></b>';
 				}
 				if(rdmdl==2)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: klik ikon versi di atas untuk melompat ke halaman penerbitan klien%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: click the version icon above to jump to the client publishing page%></font></b>';
 				}
 				if(rdmdl==3)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: tidak menulis file konfigurasi? Cobalah untuk membuat satu klik pada halaman server%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: do not write configuration files? Try to create one click on the server page%></font></b>';
 				}
 				if(rdmdl==4)
 				{
-					startlog.innerHTML = '<b><font><%:Kiat: beberapa situs web tidak normal? Coba beralih mode atau gunakan aturan pihak ketiga%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: some website are abnormal? Try switching modes or using third-party rules%></font></b>';
 				}
 				if(rdmdl==5)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: menggunakan mode Fake IP bisa mendapatkan pengalaman akses yang lebih cepat%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: using the fake IP mode can get a faster access experience%></font></b>';
 				}
 				if(rdmdl==6)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: permintaan DNS oleh TLS & TCP & HTTPS bisa mendapatkan efek anti polusi yang lebih baik%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: query DNS by TLS & TCP & HTTPS can get better anti pollution effect%></font></b>';
 				}
 				if(rdmdl==7)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: openlash akan memeriksa parameter file konfigurasi untuk memastikannya berfungsi dengan baik%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: openlash will check the configuration file parameters to ensure that it works properly%></font></b>';
 				}
 				if(rdmdl==8)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: grup server nama harus memiliki setidaknya satu set server saat menggunakan DNS khusus%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: the nameserver group must have at least one server set when using custom DNS%></font></b>';
 				}
 				if(rdmdl==9)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: pemeriksaan akses situs web menunjukkan koneksi perangkat yang saat ini masuk ke halaman Luci%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: the website access check shows the connection of the device currently logged in to the Luci page%></font></b>';
 				}
 				if(rdmdl==10)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: setelah memulai, harap tunggu dengan sabar hingga koneksi normal%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: after started, please wait patiently until the connection is normal%></font></b>';
 				}
 				if(rdmdl==11)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: jika Anda tidak menggunakan IPv6, harap matikan layanan DHCP IPv6, jika tidak koneksi akan menjadi tidak normal%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: if you don not use IPv6, please turn off the DHCP service of IPv6, otherwise the connection will be abnormal%></font></b>';
 				}
 				if(rdmdl==12)
 				{
-					startlog.innerHTML = '<b><font><%:Tips: Anda dapat memperbarui versi di halaman pengaturan global setting di update versi%></font></b>';
+					startlog.innerHTML = '<b><font><%:Tip: you can update the version in the global settings page%></font></b>';
 				}
 				if(rdmdl==13)
 				{
-					startlog.innerHTML = '<b><font><%:Catatan: Tidak disarankan untuk mengaktifkan IPv6 dan layanan terkait untuk perutean. Sebagian besar masalah koneksi jaringan yang dilaporkan sejauh ini terkait dengannya%></font></b>';
+					startlog.innerHTML = '<b><font><%:Note: It is not recommended to enable IPv6 and related services for routing. Most of the network connection problems reported so far are related to it%></font></b>';
 				}
 				if(rdmdl==14)
 				{
-					startlog.innerHTML = '<b><font><%:Catatan: Mengaktifkan DNS aman di browser akan menyebabkan shunting yang tidak normal, harap berhati-hati untuk mematikannya%></font></b>';
+					startlog.innerHTML = '<b><font><%:Note: Turning on secure DNS in the browser will cause abnormal shunting, please be careful to turn it off%></font></b>';
 				}
 				if(rdmdl==15)
 				{
-					startlog.innerHTML = '<b><font><%:Catatan: Beberapa perangkat lunak akan memodifikasi perangkat HOSTS, yang akan menyebabkan shunt yang tidak normal, harap perhatikan untuk memeriksanya%></font></b>';
+					startlog.innerHTML = '<b><font><%:Note: Some software will modify the device HOSTS, which will cause abnormal shunt, please pay attention to check%></font></b>';
 				}
 				if(rdmdl==16)
 				{
-					startlog.innerHTML = '<b><font><%:Catatan: Proxy default merutekan lalu lintas lokal, unduhan BT, PT, dll., harap gunakan mode redir sebanyak mungkin dan perhatikan penghindaran lalu lintas%></font></b>';
+					startlog.innerHTML = '<b><font><%:Note: The default proxy routes local traffic, BT, PT download, etc., please use redir mode as much as possible and pay attention to traffic avoidance%></font></b>';
 				}
       		}
 	 	}
@@ -465,11 +465,11 @@
 		clearTimeout(s);
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "switch_rule_mode")%>', {rule_mode: value}, function(x, status) {
 			if (x && x.status == 200) {
-    		alert(' <%:Pilih Proksi%>: ' + value + ' <%:berhasil ganti!%>');
+    		alert(' <%:Proxy Mode%>: ' + value + ' <%:switching succeeded!%>');
     		get_rule_mode();
 			}
 			else {
-				alert(' <%:Pilih Proksi%>: ' + value + ' <%:gagal ganti!%>');
+				alert(' <%:Proxy Mode%>: ' + value + ' <%:switching failed!%>');
 				get_rule_mode();
 			}
 		});
@@ -480,13 +480,13 @@
 			if (x && x.status == 200 && status.mode) {
 				if (status.mode == "fake-ip" || status.mode == "fake-ip-tun" || status.mode == "fake-ip-mix")
 				{
-					mode.innerHTML = status.clash && status.watchdog ? "<b style=color:purple><%:Fake-IP%></b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;" : '<b style=color:orange><%:Tidak Berjalan%></b>';
-					radio_run_normal.innerHTML = "<%:Meningkatkan%>"
+					mode.innerHTML = status.clash && status.watchdog ? "<b style=color:green><%:Fake-IP%></b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;" : '<b style=color:red><%:Not Running%></b>';
+					radio_run_normal.innerHTML = "<%:Enhance%>"
 				}
 				else if (status.mode == "redir-host" || status.mode == "redir-host-tun" ||  status.mode == "redir-host-mix")
 				{
-					mode.innerHTML = status.clash && status.watchdog ? "<b style=color:purple><%:Redir-Host%></b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;" : '<b style=color:orange><%:Tidak Berjalan%></b>';
-					radio_run_normal.innerHTML = "<%:Kompatibel%>"
+					mode.innerHTML = status.clash && status.watchdog ? "<b style=color:green><%:Redir-Host%></b>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;" : '<b style=color:red><%:Not Running%></b>';
+					radio_run_normal.innerHTML = "<%:Compatible%>"
 				};
 				for (i=0; i<radio_ru.length; i++) {
 					if (radio_ru[i].value == (status["mode"].split("-")[2] == undefined ? "" : ("-" + status["mode"].split("-")[2])) && ! radio_ru[i].checked) {
@@ -500,7 +500,7 @@
 	
 	function switch_run_mode(value)
 	{
-		var r = confirm("<%:Apakah Anda yakin ingin ganti mode yang sudah berjalan?%>")
+		var r = confirm("<%:Are you sure want to switch the running mode?%>")
     	if (r == true) {
     		clearTimeout(gr);
 			XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "switch_run_mode")%>', {run_mode: value}, function(x, status) {
@@ -517,18 +517,18 @@
 	function state_get() {
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "state")%>', null, function(x, status) {
 			if ( x && x.status == 200 ) {
-				ipdb.innerHTML = status.ipdb ? "<b style=color:purple>"+status.ipdb+"</b>" : "<b style=color:orange>"+"<%:File Tidak Ada%>"+"</b>";
-				geosite.innerHTML = status.geosite ? "<b style=color:purple>"+status.geosite+"</b>" : "<b style=color:orange>"+"<%:File Tidak Ada%>"+"</b>";
-				lhie1.innerHTML = status.lhie1 ? "<b style=color:purple>"+status.lhie1+"</b>" : "<b style=color:orange>"+"<%:File Tidak Ada%>"+"</b>";
-				ConnersHua.innerHTML = status.ConnersHua ? "<b style=color:purple>"+status.ConnersHua+"</b>" : "<b style=color:orange>"+"<%:File Tidak Ada%>"+"</b>";
-				ConnersHua_return.innerHTML = status.ConnersHua_return ? "<b style=color:orange>"+status.ConnersHua_return+"</b>" : "<b style=color:orange>"+"<%:File Tidak Ada%>"+"</b>";
-				chnroute.innerHTML = status.chnroute ? "<b style=color:purple>"+status.chnroute+"</b>" : "<b style=color:orange>"+"<%:File Tidak Ada%>"+"</b>";
-				chnroutev6.innerHTML = status.chnroutev6 ? "<b style=color:purple>"+status.chnroutev6+"</b>" : "<b style=color:orange>"+"<%:File Tidak Ada%>"+"</b>";
+				ipdb.innerHTML = status.ipdb ? "<b style=color:green>"+status.ipdb+"</b>" : "<b style=color:red>"+"<%:File Not Exist%>"+"</b>";
+				geosite.innerHTML = status.geosite ? "<b style=color:green>"+status.geosite+"</b>" : "<b style=color:red>"+"<%:File Not Exist%>"+"</b>";
+				lhie1.innerHTML = status.lhie1 ? "<b style=color:green>"+status.lhie1+"</b>" : "<b style=color:red>"+"<%:File Not Exist%>"+"</b>";
+				ConnersHua.innerHTML = status.ConnersHua ? "<b style=color:green>"+status.ConnersHua+"</b>" : "<b style=color:red>"+"<%:File Not Exist%>"+"</b>";
+				ConnersHua_return.innerHTML = status.ConnersHua_return ? "<b style=color:green>"+status.ConnersHua_return+"</b>" : "<b style=color:red>"+"<%:File Not Exist%>"+"</b>";
+				chnroute.innerHTML = status.chnroute ? "<b style=color:green>"+status.chnroute+"</b>" : "<b style=color:red>"+"<%:File Not Exist%>"+"</b>";
+				chnroutev6.innerHTML = status.chnroutev6 ? "<b style=color:green>"+status.chnroutev6+"</b>" : "<b style=color:red>"+"<%:File Not Exist%>"+"</b>";
 				if ( status.historychecktime != "0" ) {
-				   historychecktime.innerHTML = "<b style=color:purple>"+status.historychecktime+"</b>";
+				   historychecktime.innerHTML = "<b style=color:green>"+status.historychecktime+"</b>";
 				}
 		  	else {
-		 	 	 historychecktime.innerHTML = "<b style=color:purple>"+"<%:Tidak Dicadangkan%>"+"</b>";
+		 	 	 historychecktime.innerHTML = "<b style=color:green>"+"<%:No Backup%>"+"</b>";
 		 	 }
 			}
 		});
@@ -565,33 +565,33 @@
 		ws_error = true;
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "toolbar_show")%>', null, function(x, status) {
 			if (x && x.status == 200 && x.responseText != "") {
-				document.getElementById("upload_").innerHTML = "<font style=\"color:purple\">"+status.up+"</font>";
-				document.getElementById("download_").innerHTML = "<font style=\"color:purple\">"+status.down+"</font>";
-				document.getElementById("uploadtotal_").innerHTML = "<font style=\"color:purple\">"+status.up_total+"</font>";
-				document.getElementById("downloadtotal_").innerHTML = "<font style=\"color:purple\">"+status.down_total+"</font>";
-				document.getElementById("mem_t").innerHTML = "<font style=\"color:purple\">"+status.mem+"</font>";
-				document.getElementById("connect_t").innerHTML = "<font style=\"color:purple\">"+status.connections+"</font>";
+				document.getElementById("upload_").innerHTML = "<font style=\"color:green\">"+status.up+"</font>";
+				document.getElementById("download_").innerHTML = "<font style=\"color:green\">"+status.down+"</font>";
+				document.getElementById("uploadtotal_").innerHTML = "<font style=\"color:green\">"+status.up_total+"</font>";
+				document.getElementById("downloadtotal_").innerHTML = "<font style=\"color:green\">"+status.down_total+"</font>";
+				document.getElementById("mem_t").innerHTML = "<font style=\"color:green\">"+status.mem+"</font>";
+				document.getElementById("connect_t").innerHTML = "<font style=\"color:green\">"+status.connections+"</font>";
 				if (status.cpu <= 50) {
-					document.getElementById("cpu_t").innerHTML = "<font style=\"color:purple\">"+status.cpu+" %</font>";
+					document.getElementById("cpu_t").innerHTML = "<font style=\"color:green\">"+status.cpu+" %</font>";
 				}
 				else if (status.cpu >= 50 && status.cpu <= 80) {
 					document.getElementById("cpu_t").innerHTML = "<font style=\"color:orange\">"+status.cpu+" %</font>";
 				}
 				else if (status.cpu <= 100) {
-					document.getElementById("cpu_t").innerHTML = "<font style=\"color:orange\">"+status.cpu+" %</font>";
+					document.getElementById("cpu_t").innerHTML = "<font style=\"color:red\">"+status.cpu+" %</font>";
 				}
 				else {
-					document.getElementById("cpu_t").innerHTML = "<font style=\"color:purple\">0 %</font>";
+					document.getElementById("cpu_t").innerHTML = "<font style=\"color:green\">0 %</font>";
 				}
 			}
 			else {
-				document.getElementById("upload_").innerHTML = "<font style=\"color:purple\">0 B/S</font>";
-				document.getElementById("download_").innerHTML = "<font style=\"color:purple\">0 B/S</font>";
-				document.getElementById("uploadtotal_").innerHTML = "<font style=\"color:purple\">0 KB</font>";
-				document.getElementById("downloadtotal_").innerHTML = "<font style=\"color:purple\">0 KB</font>";
-				document.getElementById("mem_t").innerHTML = "<font style=\"color:purple\">0 KB</font>";
-				document.getElementById("cpu_t").innerHTML = "<font style=\"color:purple\">0 %</font>";
-				document.getElementById("connect_t").innerHTML = "<font style=\"color:purple\">0</font>";
+				document.getElementById("upload_").innerHTML = "<font style=\"color:green\">0 B/S</font>";
+				document.getElementById("download_").innerHTML = "<font style=\"color:green\">0 B/S</font>";
+				document.getElementById("uploadtotal_").innerHTML = "<font style=\"color:green\">0 KB</font>";
+				document.getElementById("downloadtotal_").innerHTML = "<font style=\"color:green\">0 KB</font>";
+				document.getElementById("mem_t").innerHTML = "<font style=\"color:green\">0 KB</font>";
+				document.getElementById("cpu_t").innerHTML = "<font style=\"color:green\">0 %</font>";
+				document.getElementById("connect_t").innerHTML = "<font style=\"color:green\">0</font>";
 			}
 		});
 	};
@@ -599,38 +599,38 @@
 	function show_sys() {
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "toolbar_show_sys")%>', null, function(x, status) {
 			if (x && x.status == 200 && x.responseText != "") {
-				document.getElementById("mem_t").innerHTML = "<font style=\"color:purple\">"+status.mem+"</font>";
+				document.getElementById("mem_t").innerHTML = "<font style=\"color:green\">"+status.mem+"</font>";
 				if (status.cpu <= 50) {
-					document.getElementById("cpu_t").innerHTML = "<font style=\"color:purple\">"+status.cpu+" %</font>";
+					document.getElementById("cpu_t").innerHTML = "<font style=\"color:green\">"+status.cpu+" %</font>";
 				}
 				else if (status.cpu >= 50 && status.cpu <= 80) {
 					document.getElementById("cpu_t").innerHTML = "<font style=\"color:orange\">"+status.cpu+" %</font>";
 				}
 				else if (status.cpu <= 100) {
-					document.getElementById("cpu_t").innerHTML = "<font style=\"color:orange\">"+status.cpu+" %</font>";
+					document.getElementById("cpu_t").innerHTML = "<font style=\"color:red\">"+status.cpu+" %</font>";
 				}
 				else {
-					document.getElementById("cpu_t").innerHTML = "<font style=\"color:purple\">0 %</font>";
+					document.getElementById("cpu_t").innerHTML = "<font style=\"color:green\">0 %</font>";
 				}
 			}
 			else {
-				document.getElementById("mem_t").innerHTML = "<font style=\"color:purple\">0 KB</font>";
-				document.getElementById("cpu_t").innerHTML = "<font style=\"color:purple\">0 %</font>";
+				document.getElementById("mem_t").innerHTML = "<font style=\"color:green\">0 KB</font>";
+				document.getElementById("cpu_t").innerHTML = "<font style=\"color:green\">0 %</font>";
 			}
 		});
 	};
 	
 	function ws_tmessage(event) {
 		var data = JSON.parse(event.data)
-		document.getElementById("upload_").innerHTML = "<font style=\"color:purple\">"+bytesToSize(data.up)+"/S</font>";
-		document.getElementById("download_").innerHTML = "<font style=\"color:purple\">"+bytesToSize(data.down)+"/S</font>";
+		document.getElementById("upload_").innerHTML = "<font style=\"color:green\">"+bytesToSize(data.up)+"/S</font>";
+		document.getElementById("download_").innerHTML = "<font style=\"color:green\">"+bytesToSize(data.down)+"/S</font>";
 	};
 	
 	function ws_cmessage(event) {
 		var data = JSON.parse(event.data)
-		document.getElementById("uploadtotal_").innerHTML = "<font style=\"color:purple\">"+bytesToSize(data.uploadTotal)+"</font>";
-		document.getElementById("downloadtotal_").innerHTML = "<font style=\"color:purple\">"+bytesToSize(data.downloadTotal)+"</font>";
-		document.getElementById("connect_t").innerHTML = "<font style=\"color:purple\">"+Object.keys(data.connections).length+"</font>";
+		document.getElementById("uploadtotal_").innerHTML = "<font style=\"color:green\">"+bytesToSize(data.uploadTotal)+"</font>";
+		document.getElementById("downloadtotal_").innerHTML = "<font style=\"color:green\">"+bytesToSize(data.downloadTotal)+"</font>";
+		document.getElementById("connect_t").innerHTML = "<font style=\"color:green\">"+Object.keys(data.connections).length+"</font>";
 		show_sys();
 	};
 	
@@ -643,25 +643,25 @@
 	  
 	function all_one_key_update(btn)
     {
-        btn.value    = '<%:Periksa Semua Pembaruan Komponen%>';
+        btn.value    = '<%:Check All Components Update%>';
         btn.disabled = true;
-        var r = confirm("<%:Periksa dan perbarui semua Core dan plug-in?%>")
+        var r = confirm("<%:Check and update all Cores and plug-ins?%>")
         if (r == true) {
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "one_key_update_check")%>', null, function(x, status) {
         	if ( x && x.status == 200 ) {
         		if ( status.corever != "0" ) {
         			XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "one_key_update")%>', null, function(x, status) {
               	if ( x && x.status != 200 ) {
-            			alert('<%:Pemeriksaan gagal, Coba lagi nanti!%>')
+            			alert('<%:Check failed, Please try again later!%>')
            			}
               });
 						}
 						else {
-							alert('<%:Tidak ada versi kompilasi yang dipilih. Silakan konfigurasikan di tab Pengaturan Umum!%>')
+							alert('<%:No compiled version is selected. Please configure it in the General Settings tab!%>')
            	}
         	}
           else {
-            alert('<%:Pemeriksaan gagal, Coba lagi nanti!%>')
+            alert('<%:Check failed, Please try again later!%>')
           }
         });
 				}
@@ -674,15 +674,15 @@
     function b_update_other_rules(btn)
     {
         btn.disabled = true;
-        btn.value    = '<%:Memeriksa.%>';
+        btn.value    = '<%:Checking...%>';
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "update_other_rules")%>', null, function(x, status) {
         if ( x && x.status == 200 ) {
            btn.disabled = false;
-           btn.value    = '<%:Periksa Pembaruan Aturan Pihak Ketiga%>';
+           btn.value    = '<%:Check Third Party Rules Update%>';
         }
         else {
         	btn.disabled = false;
-          btn.value    = '<%:Periksa Pembaruan Aturan Pihak Ketiga%>';
+          btn.value    = '<%:Check Third Party Rules Update%>';
         }
         return false;
         });
@@ -691,15 +691,15 @@
     function b_update_geoip(btn)
     {
         btn.disabled = true;
-        btn.value    = '<%:Memeriksa.%>';
+        btn.value    = '<%:Checking...%>';
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "update_geoip")%>', null, function(x, status) {
         if ( x && x.status == 200 ) {
            btn.disabled = false;
-           btn.value    = '<%:Periksa Pembaruan Data GEOIP%>';
+           btn.value    = '<%:Check GEOIP Data Update%>';
         }
         else {
         	btn.disabled = false;
-          btn.value    = '<%:Periksa Pembaruan Data GEOIP%>';
+          btn.value    = '<%:Check GEOIP Data Update%>';
         }
         return false;
         });
@@ -708,15 +708,15 @@
     function b_update_geosite(btn)
     {
         btn.disabled = true;
-        btn.value    = '<%:Memeriksa.%>';
+        btn.value    = '<%:Checking...%>';
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "update_geosite")%>', null, function(x, status) {
         if ( x && x.status == 200 ) {
            btn.disabled = false;
-           btn.value    = '<%:Periksa Pembaruan Data GeoSite%>';
+           btn.value    = '<%:Check GeoSite Data Update%>';
         }
         else {
         	btn.disabled = false;
-          btn.value    = '<%:Periksa Pembaruan Data GeoSite%>';
+          btn.value    = '<%:Check GeoSite Data Update%>';
         }
         return false;
         });
@@ -725,7 +725,7 @@
     function b_flush_fakeip_cache(btn)
     {
 		btn.disabled = true;
-		btn.value    = '<%:Pembersihan.%> ';
+		btn.value    = '<%:Flushing...%> ';
 		XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash","flush_fakeip_cache")%>',
 			null,
 			function(x,status)
@@ -733,16 +733,16 @@
 				if ( x && x.status == 200 ) {
 					if(status.flush_status == "0" || status.flush_status != "")
 					{
-						btn.value = '<%:Gagal Pembersihan%>';
+						btn.value = '<%:Flush Failed%>';
 					
 					}
 					else
 					{
-					btn.value = '<%:Pembersihan Berhasil%>';
+					btn.value = '<%:Flush Successful%>';
 					}
 				}
 				else {
-				btn.value = '<%:Pembersihan Berakhir%>';
+				btn.value = '<%:Flush Timeout%>';
 				}
 			}
 		);
@@ -753,15 +753,15 @@
     function b_update_subscribe(btn)
     {
         btn.disabled = true;
-        btn.value    = '<%:Memeriksa.%>';
+        btn.value    = '<%:Checking...%>';
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "update_subscribe")%>', null, function(x, status) {
         if ( x && x.status == 200 ) {
            btn.disabled = false;
-           btn.value    = '<%:Periksa Pembaruan Konfigurasi%>';
+           btn.value    = '<%:Check Config Update%>';
         }
         else {
         	btn.disabled = false;
-          btn.value    = '<%:Periksa Pembaruan Konfigurasi%>';
+          btn.value    = '<%:Check Config Update%>';
         }
         return false;
         });
@@ -770,15 +770,15 @@
 	function b_reload_firewall(btn)
     {
         btn.disabled = true;
-        btn.value    = '<%:Memuat ulang.%>';
+        btn.value    = '<%:Reloading...%>';
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "reload_firewall")%>', null, function(x, status) {
         if ( x && x.status == 200 ) {
            btn.disabled = false;
-           btn.value    = '<%:Muat Ulang Aturan Firewall%>';
+           btn.value    = '<%:Reload Firewall Rules%>';
         }
         else {
         	btn.disabled = false;
-          btn.value    = '<%:Reset Aturan Firewall Gagal%>';
+          btn.value    = '<%:Firewall Rules Reset Failed%>';
         }
         return false;
         });
@@ -787,15 +787,15 @@
 	function b_close_all_connection(btn)
     {
         btn.disabled = true;
-        btn.value    = '<%:Memuat ulang.%>';
+        btn.value    = '<%:Reloading...%>';
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "close_all_connection")%>', null, function(x, status) {
         if ( x && x.status == 200 ) {
            btn.disabled = false;
-           btn.value    = '<%:Tutup Semua Koneksi%>';
+           btn.value    = '<%:Close All Connections%>';
         }
         else {
         	btn.disabled = false;
-          btn.value    = '<%:Gagal Tutup Semua Koneksi%>';
+          btn.value    = '<%:Close All Connections Failed%>';
         }
         return false;
         });
@@ -805,7 +805,7 @@
     {
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "status")%>', null, function(x, status) {
         btn.disabled = true;
-        btn.value    = '<%:Buka Panel%>';
+        btn.value    = '<%:Open Panel%>';
         if (status.daip && window.location.hostname == status.daip) {
             url1='<%="http://'+window.location.hostname+':'+status.cn_port+'/ui/yacd/?hostname='+ window.location.hostname + '&port=' + status.cn_port + '&secret=' + status.dase +'"%>';
         }
@@ -825,7 +825,7 @@
     {
         XHR.get('<%=luci.dispatcher.build_url("admin", "services", "openclash", "status")%>', null, function(x, status) {
         btn.disabled = true;
-        btn.value    = '<%:Buka Panel%>';
+        btn.value    = '<%:Open Panel%>';
         if (status.daip && window.location.hostname == status.daip) {
             url2='<%="http://'+window.location.hostname+':'+status.cn_port+'/ui/dashboard/#/?host='+ window.location.hostname + '&port=' + status.cn_port + '&secret=' + status.dase +'"%>';
         }
@@ -868,7 +868,7 @@
     
     function sponsorpage()
     {
-        url7='https://sociabuzz.com/master_wifi_network_solution/tribe';
+        url7='https://ko-fi.com/vernesong';
         winOpen(url7);
     };
 
@@ -915,4 +915,3 @@
        winOpen(url4);
     };
 //]]></script>
-
